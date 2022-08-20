@@ -17,7 +17,7 @@
   <body>
     <nav class="primary-nav">
       <div class="container row">
-        <img src="img/logo.svg" alt="CRL logo" class="logo" />
+        <img src="img/logo.svg" alt="CRL logo" class="primary-nav__logo" />
 
         <ul class="primary-nav__list nav__list">
           <li class="primary-nav__item">
@@ -44,19 +44,19 @@
     </nav>
 
     <header>
-      <div class="container row">
-        <div class="hero-title">
-          <h1 class="title">
+      <div class="container row hero">
+        <div class="hero__col">
+          <h1 class="hero__title">
             <span>Responsive layouts</span> don't have to be a struggle
           </h1>
         </div>
 
-        <div class="hero-body">
-          <p>
+        <div class="hero__col">
+          <p class="hero__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <a href="#" class="link-btn">I want to learn</a>
+          <a href="#" class="hero__link link-btn">I want to learn</a>
         </div>
       </div>
     </header>
@@ -64,27 +64,27 @@
     <main>
       <section class="section-one">
         <div class="container row">
-          <div class="col">
-            <h2 class="section-title">Mobile-first</h2>
-            <p class="section-text">
+          <div class="section-one__col">
+            <h2 class="section-one__title">Mobile-first</h2>
+            <p class="section-one__body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
           </div>
 
-          <div class="col">
-            <h2 class="section-title">Efficient</h2>
-            <p class="section-text">
+          <div class="section-one__col">
+            <h2 class="section-one__title">Efficient</h2>
+            <p class="section-one__body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
           </div>
 
-          <div class="col">
-            <h2 class="section-title">Done right</h2>
-            <p class="section-text last-p">
+          <div class="section-one__col">
+            <h2 class="section-one__title">Done right</h2>
+            <p class="section-one__body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
@@ -95,18 +95,18 @@
 
       <section class="section-two">
         <div class="container row">
-          <div class="col">
-            <article class="section-two__main-article">
-              <h2 class="article__title">It doesn't have to be so hard</h2>
-              <p class="article__text">
+          <div class="section-two__col">
+            <article class="section-two__article">
+              <h2 class="section-two__title">It doesn't have to be so hard</h2>
+              <p class="section-two__body">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam.
               </p>
-              <img src="img/img.jpg" alt="CV sketch" class="article__img" />
-              <p class="article__text">
+              <img src="img/img.jpg" alt="CV sketch" class="section-two__img" />
+              <p class="section-two__body">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
@@ -116,31 +116,31 @@
             </article>
           </div>
 
-          <div class="col">
-            <section class="section-two__sub-section">
-              <article class="section-two__side-article">
-                <h2 class="side-article-title">Break it down</h2>
-                <p class="side-article-text last-p">
+          <div class="section-two__col">
+            <aside class="section-two__sidebar">
+              <div class="section-two__widget">
+                <h2 class="widget__title">Break it down</h2>
+                <p class="widget__body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-              </article>
+              </div>
 
-              <article class="section-two__side-article">
-                <h2 class="side-article-title">Work your way up</h2>
-                <p class="side-article-text last-p">
+              <div class="section-two__widget">
+                <h2 class="widget__title">Work your way up</h2>
+                <p class="widget__body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-              </article>
+              </div>
 
-              <article class="section-two__side-article">
-                <p class="side-article-text">
+              <div class="section-two__widget">
+                <p class="widget_body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-              </article>
-            </section>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
@@ -151,76 +151,77 @@
         <h2 class="footer__title">Just scratching the surface</h2>
 
         <div class="row">
-          <div class="col">
+          <div class="footer__main-col">
             <h2 class="footer__subtitle">About our company</h2>
-            <p class="footer__text">
+            <p class="footer__body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
           </div>
 
-          <div class="col">
+          <div class="footer__col">
             <h2 class="footer__subtitle">Getting around</h2>
+
             <nav class="footer__nav">
-              <ul class="footer__nav__list nav__list">
-                <li class="footer__list-item">
+              <ul class="footer__list nav__list">
+                <li class="footer__item">
                   <a href="#" class="footer__link nav__link">Home</a>
                 </li>
 
-                <li class="footer__list-item">
+                <li class="footer__item">
                   <a href="#" class="footer__link nav__link">About</a>
                 </li>
 
-                <li class="footer__list-item">
+                <li class="footer__item">
                   <a href="#" class="footer__link nav__link">Contact</a>
                 </li>
               </ul>
             </nav>
           </div>
 
-          <div class="col">
+          <div class="footer__col">
             <h2 class="footer__subtitle">Other things</h2>
 
             <nav class="footer__nav">
-              <ul class="footer__nav__list nav__list">
-                <li class="footer__list-item">
-                  <a href="#" class="footer__link nav__links">Lorem ipsum</a>
+              <ul class="footer__list nav__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link nav__link">Lorem ipsum</a>
                 </li>
 
-                <li class="footer__list-item">
+                <li class="footer__item">
                   <a href="#" class="footer__link nav__link">dolor</a>
                 </li>
 
-                <li class="footer__list-item">
+                <li class="footer__item">
                   <a href="#" class="footer__link nav__link">sit amet</a>
                 </li>
 
-                <li class="footer__list-item">
+                <li class="footer__item">
                   <a href="#" class="footer__link nav__link">consectetur</a>
                 </li>
               </ul>
             </nav>
           </div>
 
-          <div class="col">
+          <div class="footer__col">
             <h2 class="footer__subtitle">And more</h2>
 
             <nav class="footer__nav">
-              <ul class="footer__nav__list nav__list">
-                <li class="footer__list-item">
+              <ul class="footer__list nav__list">
+                <li class="footer__item">
                   <a href="#" class="footer__link nav__link">Lorem ipsum</a>
                 </li>
 
-                <li class="footer__list-item">
+                <li class="footer__item">
                   <a href="#" class="footer__link nav__link">dolor</a>
                 </li>
 
-                <li class="footer__list-item">
+                <li class="footer__item">
                   <a href="#" class="footer__link nav__link">sit amet</a>
                 </li>
 
-                <li class="footer__list-item">
+                <li class="footer__item">
                   <a href="#" class="footer__link nav__link">consectetur</a>
                 </li>
               </ul>
