@@ -1,31 +1,10 @@
-/* MOBILE FIRST */
+/* ================
+    MOBILE FIRST
+================ */
 
 :root {
-  --ff-body: "Montserrat", sans-serif;
-  --ff-heading: "Oswald", sans-serif;
-
-  --fw-regular: 400;
-  --fw-bold: 700;
-
-  --fs-nav-link: 1.125rem;
-  --fs-page-title: 3.125rem;
-  --fs-hero-body: 1.25rem;
-  --fs-section-one-heading: 1.875rem;
-  --fs-section-one-text: 1.125rem;
-  --fs-article-title: 2.25rem;
-  --fs-section-two-text: 1.3125rem;
-  --fs-section-two-aside-heading: 1.875rem;
-  --fs-section-two-aside-text: 1.125rem;
-  --fs-footer-title: 1.5rem;
-  --fs-footer-heading: 1.3125rem;
-  --fs-footer-link: 1rem;
-
-  --clr-bg-navbar: #2e323f;
-  --clr-bg: #3b4050;
-  --clr-bg-section-one: #f1f1f1;
-  --clr-body: #3b4050;
-  --clr-heading: #a59678;
-  --clr-white: #ffffff;
+  --clr-primary: #3b4050;
+  --clr-secondary: #a59678;
 }
 
 * {
@@ -34,8 +13,8 @@
 
 body {
   margin: 0;
-  font-family: var(--ff-body);
-  color: var(--clr-body);
+  font-family: "Montserrat", sans-serif;
+  color: var(--clr-primary);
 }
 
 img {
@@ -47,10 +26,226 @@ img {
     TYPOGRAPHY
 ================ */
 
+h1,
+h2 {
+  font-family: "Oswald", sans-serif;
+  color: var(--clr-secondary);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.article__title {
+  font-size: 1.875rem;
+}
+
+.hero__body,
+.primary-nav__link,
+.link-btn,
+.sidebar__title,
+.sidebar__body,
+.white {
+  color: #ffffff;
+}
+
+.footer__title {
+  font-size: 2.19rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__subtitle {
+  margin-top: 1em;
+}
+
+.footer__item {
+  margin-top: 1em;
+}
+
+.footer__body,
+.footer__link {
+  color: #b2b5bd;
+}
+
+.nav__link,
+.hero__link {
+  text-decoration: none;
+}
+
+.primary-nav__link,
+.link-btn {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.link-btn {
+  display: inline-block;
+  background-color: var(--clr-secondary);
+  border-radius: 10em;
+  padding: 0.25em 1em;
+}
+
 /* ================
     LAYOUT
 ================ */
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header,
+footer,
+.sidebar__widget {
+  background-color: var(--clr-primary);
+}
+
+.section-one,
+.section-two,
+footer {
+  padding: 2.5em 0;
+}
+
+.primary-nav {
+  background-color: #2e323f;
+}
+
+.section-one {
+  background-color: #f1f1f1;
+}
+
+header {
+  padding: 4em 0;
+}
+
+.sidebar__widget {
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* ================
     MEDIA QUERIES
 ================ */
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ================
+    TYPOGRAPHY
+  ================ */
+
+  p {
+    line-height: 1.35;
+  }
+
+  .hero__title {
+    font-size: 5.625rem;
+  }
+
+  .hero__body,
+  .hero__link {
+    font-size: 1.5rem;
+  }
+
+  .hero__link {
+    padding: 0.5em 1.75em;
+  }
+
+  .section-one__title,
+  .sidebar__title {
+    font-size: 1.875rem;
+  }
+
+  .sidebar__title,
+  .sidebar__body {
+    text-align: center;
+  }
+
+  .article__title {
+    font-size: 2.25rem;
+  }
+
+  .article__body,
+  .footer__subtitle {
+    font-size: 1.3125rem;
+  }
+
+  .footer__title {
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
+
+  /* ================
+    LAYOUT
+  ================ */
+
+  header {
+    padding-top: 5em;
+    padding-bottom: 10em;
+  }
+
+  .hero__col {
+    width: 45%;
+  }
+
+  .hero__second-col {
+    align-self: flex-end;
+  }
+
+  .section-one {
+    padding: 6em 0;
+  }
+
+  .section-one__col {
+    width: 25%;
+  }
+
+  .section-one__title,
+  .section-one__body {
+    text-align: center;
+  }
+
+  .section-two {
+    padding: 8em 0;
+  }
+
+  /* ARTICLE */
+  .section-two__col-main {
+    width: 55%;
+  }
+
+  /* SIDEBAR */
+  .section-two__col-side {
+    width: 35%;
+  }
+
+  .sidebar__widget {
+    padding: 1.5em;
+  }
+
+  footer {
+    padding: 4em;
+    background-image: linear-gradient(#2e323f, var(--clr-primary));
+  }
+
+  .footer__main-col {
+    width: 42.5%;
+  }
+
+  .footer__col {
+    width: 12.5%;
+  }
+}
