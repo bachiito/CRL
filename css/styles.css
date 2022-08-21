@@ -91,12 +91,18 @@ p {
 
 .primary-nav__link,
 .link-btn {
+  display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .primary-nav__link {
   font-family: var(--ff-heading);
+  margin: 0.5em 0;
+}
+
+.primary-nav__item {
+  text-align: center;
 }
 
 .hero__link {
@@ -105,7 +111,6 @@ p {
 }
 
 .link-btn {
-  display: inline-block;
   background-color: var(--clr-secondary);
   border-radius: 10em;
   padding: 0.25em 0.75em;
@@ -125,6 +130,34 @@ p {
   margin: 0 auto;
 }
 
+.toggle-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.toggle-btn-line {
+  display: block;
+  width: 1.5rem;
+  height: 0.25rem;
+  margin: 0.25rem;
+  background-color: #ffffff;
+  border-radius: 10rem;
+}
+
+.primary-nav {
+  background-color: #2e323f;
+  padding: 1em 0;
+}
+
+.primary-nav__list-container {
+  display: none;
+}
+
+.primary-nav__list-container.active {
+  display: block;
+}
+
 header,
 footer,
 .sidebar__widget {
@@ -135,10 +168,6 @@ footer,
 .section-two,
 footer {
   padding: 2.5em 0;
-}
-
-.primary-nav {
-  background-color: #2e323f;
 }
 
 .section-one {
@@ -178,6 +207,10 @@ footer {
     TYPOGRAPHY
   ================ */
 
+  .primary-nav__link {
+    margin: 0;
+  }
+
   .hero__title {
     font-size: 3.5rem;
   }
@@ -213,8 +246,12 @@ footer {
     LAYOUT
   ================ */
 
-  .primary-nav {
-    padding: 1em 0;
+  .toggle-btn {
+    display: none;
+  }
+
+  .primary-nav__list-container {
+    display: block;
   }
 
   .primary-nav__list {
